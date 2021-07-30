@@ -1,30 +1,32 @@
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix="$")
+AmbiBot = commands.Bot(command_prefix="$")
 
-@bot.event
+
+
+@AmbiBot.event
 async def on_ready():
-    print('We have logged in as {}'.format(bot.user))
+    print('We have logged in as {}'.format(AmbiBot.user))
 
-# @bot.command(name='fire')
+# @AmbiBot.command(name='fire')
 # async def on_campfire(message):
-#     if message.author == bot.user:
+#     if message.author == AmbiBot.user:
 #         return
 #     channel = message.channel
 #     response = 'Gotcha, <@{}>! Playing campfire!'.format(message.author.id)
 #     await channel.send(response)
 
-# @bot.command(name='rain')
+# @AmbiBot.command(name='rain')
 # async def on_rain(message):
-#     if message.author == bot.user:
+#     if message.author == AmbiBot.user:
 #         return
 #     channel = message.channel
 #     response = 'Gotcha, <@{}>! Playing rain!'.format(message.author.id)
 #     await channel.send(response)
 
-@bot.command(name='ambi')
+@AmbiBot.command(name='ambi')
 async def on_ambi(message):
-    if message.author == bot.user:
+    if message.author == AmbiBot.user:
         return
     channel = message.channel
     # msg = message.text.lower()
