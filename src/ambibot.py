@@ -41,4 +41,4 @@ async def on_ambi(message):
         await channel.send(response)
 
 
-bot.run('PUT YOUR TOKEN HERE!!!!')
+AmbiBot.run('PUT YOUR TOKEN HERE!!!!')
